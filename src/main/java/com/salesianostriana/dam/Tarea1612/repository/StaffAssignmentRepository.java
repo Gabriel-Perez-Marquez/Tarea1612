@@ -1,0 +1,7 @@
+package com.salesianostriana.dam.Tarea1612.repository;
+
+import com.salesianostriana.dam.Tarea1612.model.StaffAssignment;
+import org.springframework.data.jpa.repository.JpaRepository;
+
+public interface StaffAssignmentRepository  extends JpaRepository<StaffAssignment, Long> {
+}
