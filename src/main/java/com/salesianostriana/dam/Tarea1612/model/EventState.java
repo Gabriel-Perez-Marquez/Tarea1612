@@ -1,0 +1,7 @@
+package com.salesianostriana.dam.Tarea1612.model;
+
+public enum EventState {
+    PUBLICADO,
+    CREADO,
+    CANCELADO
+}

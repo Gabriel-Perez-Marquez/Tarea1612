@@ -21,6 +21,8 @@ public class Event {
 
     private LocalDateTime date;
 
+    private EventState state;
+
     @ManyToOne
     @JoinColumn(name = "organizer_id")
     private Organizer organizer;
@@ -37,6 +39,12 @@ public class Event {
     @Builder.Default
     private List<StaffAssignment> staff = new ArrayList<>();
 
+    private LocalDateTime startAt;
+    private LocalDateTime endAt;
 
+
+    public boolean comprobarValidez(){
+        return this.organizer != null && this.venue != null;
+    }
 
 }
